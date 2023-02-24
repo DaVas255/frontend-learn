@@ -4,14 +4,19 @@
 }    
 
 body{
-    background: #F4F7F6;
+    background: #E5E5E5;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
 button{
     cursor: pointer;
     width: max-content;
+}
+
+ul{
+    list-style-type: none;
 }
 
 h1{
@@ -50,9 +55,12 @@ main{
     margin-right: 40px;
 }
 
+.ul2 a{
+    color: #2D6776;;
+}
+
 .left-coloumn__head button{
-    margin-left: 40px;
-    padding: 0px 0px;
+    margin-left: 150px;
     font-size: 12px;
     color: #2E6978;
     background: #D6F3F2;
@@ -66,6 +74,7 @@ main{
     border-radius: 8px;
     padding: 36px 32px;
     margin-right: 25px;
+    margin-bottom: 20px;
 }
 
 .left-coloumn__main h2{
@@ -73,14 +82,91 @@ main{
     padding-bottom: 15px;
 }
 
+.left-coloumn__main button{
+    background-color: transparent;
+    color: #2D6776;
+    font-weight: 600;
+    border: 0.5px solid #60C1BA;
+    border-radius: 4px;
+    padding: 20px 250px;
+}
+
+.uls_up{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid #C0C0C0;
+}
+
+li{
+    padding-bottom: 35px;
+}
+
+.ul1 span{
+    color: red;
+}
+
+.ul2 span{
+    color: #C4C4C4;
+}
+
+.uls_up{
+    display: flex;
+}
+
+.ul1{
+    margin-right: 90px;
+    font-weight: 600;
+}
+
+.last_li{
+    margin-bottom: 35px;
+}
+
+.uls_down{
+    padding-top: 35px;
+    font-weight: 600;
+}
+
+.left-coloumn__footer{
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px 2px rgba(192, 192, 192, 0.6);
+    border-radius: 8px;
+    padding: 30px;
+    margin-right: 25px;
+}
+
+.L-C__footer{
+    margin-left: 30px;
+}
+
+.L-C__footer p{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.p{
+    color: #C0C0C0;
+}
+
+.L-C__foot{
+    margin-top: 25px;
+}
+
+.L-C__foot button{
+    background: #F4F7F6;
+    border: 0px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
 .right-coloumn{
-    /* margin-left: 5%; */
     padding: 20px;
     background: #FFFFFF;
     box-shadow: 0px 2px 8px 2px rgba(192, 192, 192, 0.6);
     border-radius: 8px;
     align-self: flex-end
-    
 }
 
 .new{
