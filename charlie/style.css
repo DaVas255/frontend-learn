@@ -4,9 +4,8 @@
 }
 
 .wrapper {
-  max-width: 1524px;
-  max-height: 806px;
-  margin: 100px auto;
+  max-width: 1260px;
+  margin: 62px auto;
 }
 
 body {
@@ -23,12 +22,12 @@ button {
 
 .button {
   font-size: 12px;
-  padding: 7px 16px;
+  padding: 12px 16px;
   border: 1px solid #586c73;
   border-radius: 100px;
 }
 
-.block {
+.item {
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
@@ -42,8 +41,8 @@ button {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0px 135px;
   margin-bottom: 93px;
   color: #586c73;
 }
@@ -59,9 +58,8 @@ header {
   color: #1e2537;
 }
 
-.main {
+.list {
   display: flex;
   column-gap: 25px;
   justify-content: center;
 }
-/* ss */
