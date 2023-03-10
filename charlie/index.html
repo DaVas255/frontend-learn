@@ -9,38 +9,77 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <img src="icons/Logo 1.png" alt="" />
-        <div class="buttons">
-          <button class="button header__words header_words_active">
-            Add words
-          </button>
-          <button class="button header__module header_module_active">
-            Add module
-          </button>
+      <div class="modal-container">
+        <div class="modal-content">
+          <div class="modal-content__header">
+            <div class="modal-content__title">Add module</div>
+
+            <button class="modal-content__close" title="Close">
+              <img src="icons/button-close.png" alt="" />
+            </button>
+          </div>
+
+          <div class="modal-content__main">
+            <div class="modal-content__text">Name module</div>
+            <div class="modal-content__input">
+              <input class="input" type="text" placeholder="Enter name" />
+            </div>
+
+            <div class="modal-content__text">Description module</div>
+            <div class="modal-content__input">
+              <textarea
+                class="model-content__description input"
+                placeholder="Enter description"></textarea>
+            </div>
+          </div>
+
+          <div class="modal-content__footer">
+            <button class="modal-content__cancel button">Cancel</button>
+            <button class="modal-content__add button">Add module</button>
+          </div>
+        </div>
+      </div>
+
+      <header class="header">
+        <div class="header__body">
+          <div class="header__logo">
+            <img class="header__img" src="icons/Logo 1.png" alt="" />
+          </div>
+
+          <div class="header__buttons">
+            <button class="header__words header__words_active button">
+              Add words
+            </button>
+            <button class="header__module header__module_active button">
+              Add module
+            </button>
+          </div>
         </div>
       </header>
 
-      <main>
-        <ul class="list">
-          <li>
-            <div class="item"><h2>Dictionary</h2></div>
-          </li>
+      <main class="main">
+        <div class="main__body">
+          <ul class="main__list">
+            <li>
+              <div class="main__item"><h2>Dictionary</h2></div>
+            </li>
 
-          <li>
-            <div class="item">
-              <h2>Harry Potter and the Philosopher's Stone</h2>
-              <p>5 WORDS</p>
-            </div>
-          </li>
-          <li>
-            <div class="item">
-              <h2>TUSUR homeworks</h2>
-              <p>7 WORDS</p>
-            </div>
-          </li>
-        </ul>
+            <li>
+              <div class="main__item">
+                <h2>Harry Potter and the Philosopher's Stone</h2>
+                <p>5 WORDS</p>
+              </div>
+            </li>
+            <li>
+              <div class="main__item">
+                <h2>TUSUR homeworks</h2>
+                <p>7 WORDS</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </main>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
