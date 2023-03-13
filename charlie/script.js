@@ -1,20 +1,17 @@
-(function () {
-  let modal = document.querySelector(".modal-container");
-  let closeButton = document.querySelector(".modal-content__close");
-  let modalTriggers = document.querySelectorAll(".header__module");
+function modal() {
+  const modal = document.querySelector("#pop-up");
+  const overlay = document.querySelector("#overlay");
+  const closeButton = document.querySelector("#js-close-button");
+  const modalTriggers = document.querySelectorAll("#js-button-open");
 
-  let isModalOpen = false;
-  let pageYOffset = 0;
-
-  let openModal = function () {
-    pageYOffset = window.pageYOffset;
+  const openModal = function () {
     modal.classList.add("is-open");
-    isModalOpen = true;
+    overlay.classList.add("is-open");
   };
 
-  let closeModal = function () {
+  const closeModal = function () {
     modal.classList.remove("is-open");
-    isModalOpen = false;
+    overlay.classList.remove("is-open");
   };
 
   modalTriggers.forEach(function (item) {
@@ -22,4 +19,5 @@
   });
 
   closeButton.addEventListener("click", closeModal);
-})();
+  overlay.addEventListener("click", closeModal);
+}

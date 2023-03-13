@@ -9,12 +9,17 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="modal-container">
+      <div id="overlay" class="overlay"></div>
+
+      <div id="pop-up" class="modal-container">
         <div class="modal-content">
           <div class="modal-content__header">
             <div class="modal-content__title">Add module</div>
 
-            <button class="modal-content__close" title="Close">
+            <button
+              id="js-close-button"
+              class="modal-content__close"
+              title="Close">
               <img src="icons/button-close.png" alt="" />
             </button>
           </div>
@@ -50,7 +55,10 @@
             <button class="header__words header__words_active button">
               Add words
             </button>
-            <button class="header__module header__module_active button">
+            <button
+              id="js-button-open"
+              class="header__module header__module_active button"
+              onclick="modal()">
               Add module
             </button>
           </div>
