@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CHARLIE</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="overlay" class="overlay" onclick="closeModal()">
+        <div
+          id="pop-up"
+          class="modal-container"
+          onclick="event.stopPropagation()">
+          <div class="modal-content">
+            <div class="modal-content__header">
+              <div class="modal-content__title">Add module</div>
+
+              <button
+                id="js-close-button"
+                class="modal-content__close"
+                title="Close">
+                <img src="icons/button-close.png" alt="" />
+              </button>
+            </div>
+
+            <div class="modal-content__main">
+              <div class="modal-content__text">Name module</div>
+              <div class="modal-content__input">
+                <input class="input" type="text" placeholder="Enter name" />
+              </div>
+
+              <div class="modal-content__text">Description module</div>
+              <div class="modal-content__input">
+                <textarea
+                  class="model-content__description input"
+                  placeholder="Enter description"></textarea>
+              </div>
+            </div>
+
+            <div class="modal-content__footer">
+              <button class="modal-content__cancel button">Cancel</button>
+              <button class="modal-content__add button">Add module</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header class="header">
+        <div class="header__body">
+          <div class="header__logo">
+            <img class="header__img" src="icons/Logo 1.png" alt="" />
+          </div>
+
+          <div class="header__buttons">
+            <button class="header__words header__words_active button">
+              Add words
+            </button>
+            <button
+              id="js-button-open"
+              class="header__module header__module_active button">
+              Add module
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="main__body">
+          <ul class="main__list">
+            <li>
+              <div class="main__item"><h2>Dictionary</h2></div>
+            </li>
+
+            <li>
+              <div class="main__item">
+                <h2>Harry Potter and the Philosopher's Stone</h2>
+                <p>5 WORDS</p>
+              </div>
+            </li>
+            <li>
+              <div class="main__item">
+                <h2>TUSUR homeworks</h2>
+                <p>7 WORDS</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
